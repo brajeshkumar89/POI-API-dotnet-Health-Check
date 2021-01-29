@@ -41,15 +41,4 @@ jobs:
       run: dotnet restore poi/web/*.csproj
       
     - name: .NET Build Web
-      run: dotnet build --configuration Release --no-restore poi/web/*.csproj
-
-    - name: .NET Build Unit Tests
-      run: dotnet build --configuration Release poi/tests/UnitTests/UnitTests.csproj    
-      
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: poi/tests/UnitTests/lcov/coverage.info
-        base-path: poi
-        flag-name: Unit
+      run: dotnet build --configuration Release --no-restore poi/web/*.csproj   
