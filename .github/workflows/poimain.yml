@@ -3,7 +3,7 @@ name: POI CICD
 env:
   poi_path: poi/**
   registry: docker.pkg.github.com
-  repository: brajeshkumar89/poi-api-dotnet-health-check
+  repository: brajeshkumar89/poi-api-dotnet-health-check/poi
   docker_path: poi/web
   staging_url: https://openhackxv61mxh2poi-staging.azurewebsites.net
   prod_url: https://openhackxv61mxh2poi.azurewebsites.net
